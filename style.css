@@ -1,0 +1,135 @@
+* {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  margin: 0;
+  font-family: GtaFont;
+}
+
+#header {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
+#player {
+  text-align: center;
+  width: 50%;
+  z-index: 10;
+  position: absolute;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 3rem;
+
+}
+
+#menu {
+  top: 3rem;
+  text-align: center;
+  width: 100%;
+  margin: 2rem;
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 10;
+  height: auto;
+
+  a {
+    width: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: none;
+    color: #000 !important;
+  }
+}
+
+#container {
+  z-index: 1;
+  /* display:none; */
+  overflow: hidden;
+  position: relative;
+  background-image: url(img/Brooklyn-Bridge-Cityscape_2560.jpg);
+  -webkit-animation: bgmove 18s infinite linear;
+}
+
+#alexey,
+#anya,
+#ilya,
+#katerina,
+#tanya,
+#tatiana,
+#tommy {
+  width: auto;
+  height: auto;
+  position: absolute;
+  display: none;
+}
+
+#alexey {
+  bottom: -130px;
+  left: 30%;
+}
+
+#anya {
+  bottom: -70px;
+  right: 10%;
+  /* display: none; */
+}
+
+#ilya {
+  bottom: -100px;
+  left: 5%;
+  /* display: none; */
+}
+
+#katerina {
+  bottom: -10px;
+  right: -10%;
+  /* display: none; */
+}
+
+#tanya {
+  bottom: -70px;
+  left: 15%;
+  /* display: none; */
+}
+
+#tatiana {
+  bottom: -10px;
+  right: 20%;
+  /* display: none; */
+}
+
+#tommy {
+  bottom: -60px;
+  left: -20%;
+  /* display: none; */
+}
+
+@-webkit-keyframes bgmove {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 70% 30%;
+  }
+}
+
+@font-face {
+  font-family: GtaFont;
+  src: url("font/pricedown.ttf") format("opentype");
+}
